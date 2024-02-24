@@ -1,8 +1,10 @@
 
 const pokeApi = {}
-
+const pokemons = []
 function convertPokeApiDetailToPokemon(pokeDetail) {
+    pokemons.push(pokeDetail)
     const pokemon = new Pokemon()
+    console.log(pokemons)
     pokemon.number = pokeDetail.id
     pokemon.name = pokeDetail.name
 
